@@ -1,8 +1,21 @@
 package com.examly.springapp;
 
+import org.testng.annotations.Test;
 import java.net.URL;
 
-public class SpringApplicationTests<WebDriver> {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class AppTest {
 
 	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = null;
