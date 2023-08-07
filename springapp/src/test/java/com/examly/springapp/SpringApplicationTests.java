@@ -1,4 +1,4 @@
-package com.examly.springapp;
+package ai.iamneo.testing.Testing_Selenium_TestNg;
 
 import org.testng.annotations.Test;
 import java.net.URL;
@@ -11,9 +11,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
-public class SpringApplicationTests {
+public class AppTest {
 
 	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = null;
