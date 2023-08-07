@@ -1,6 +1,9 @@
 package ai.iamneo.testing.Testing_Selenium_TestNg;
 
 import org.testng.annotations.Test;
+
+import net.jodah.failsafe.internal.util.Assert;
+
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
@@ -43,8 +46,8 @@ public class AppTest {
  public void backPage() throws InterruptedException 
  {
   driver.navigate().back();
-  //String title = driver.getTitle();
-  // Assert.assertEquals(title, "Learning and assessment solution for Universities and Enterprises");
+  String title = driver.getTitle();
+  Assert.assertEquals(title, "Learning and assessment solution for Universities and Enterprises");
 
  }
  @Test
