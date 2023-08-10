@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 18.306 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.iamNeo  Time elapsed: 3.958 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=114.0.5735.133)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'bfbcbeeadafebecbccfaabacdfdabdafecefecf-0', ip: '10.56.97.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7258c0fd03f3a1bf1365e36f9f09bc1d, get {url=http://iamneo.ai}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.4v815l}, goog:chromeOptions: {debuggerAddress: localhost:44785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.56.97.4:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.56.97.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.97.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7258c0fd03f3a1bf1365e36f9f09bc1d
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.iamNeo(AppTest.java:29)
+
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.nextPage  Time elapsed: 0.042 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'bfbcbeeadafebecbccfaabacdfdabdafecefecf-0', ip: '10.56.97.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7258c0fd03f3a1bf1365e36f9f09bc1d, get {url=https://www.facebook.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.4v815l}, goog:chromeOptions: {debuggerAddress: localhost:44785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.56.97.4:4444/sessio..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.56.97.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.97.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7258c0fd03f3a1bf1365e36f9f09bc1d
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.nextPage(AppTest.java:37)
+
